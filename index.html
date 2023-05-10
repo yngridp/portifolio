@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="assets/images/goku_ico.png">
-    <title>Portfólio da Yngrid</title>
+    <link rel="icon" type="image/png" href="assets/images/iconeprogramacao.png">
+    <link rel="stylesheet" href="assets/css/style.css"
 </head>
 <body>
     <!-- Menu da Página -->
     <nav>
         <!-- Logo + Texto à esquerda do Menu -->
-        <div>
-            <img src="assets/images/goku_ico.png" alt="Logo da página - Goku">
-            <span>Yngrid</span>
+        <div class="logo" >
+            <img class= "icone" src="assets/images/iconeprogramacao.png" alt="Logo da página - programacao">
+            <span class="titulo">Portfólio Yngrid</span>
         </div>
         <!-- Opções do Menu utilizando Marcadores não ordenados (simbólico)-->
         <ul>
-            <a href="#home">
+            <a href="index.html">
                  <li>Home</li>
             </a>
             <a href="#perfil">
@@ -34,33 +34,40 @@
 
     <!-- Conteúdo da Página -->
     <main>
-        <h1 id="perfil">Sobre Yngrid:</h1>
-        <section>
+        <h1 id="perfil">Sobre Mim:</h1>
+        <section  id="sobre">
             <div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium necessitatibus accusamus dolorem tempore natus repudiandae, sapiente numquam? Nulla debitis, similique possimus laborum deleniti rerum, quis, reprehenderit quas id consectetur aliquam.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, itaque! Fuga voluptas voluptatibus autem libero maiores cum laudantium, quia repellendus officia odit minima, eum, hic est! Commodi nobis quos doloremque.</p>
+                <p>Sou apaixonada pela tecnologia! Tenho experiência profissional como vendedora de comércio varejista na empresa Americanas S/A, onde aprendi a trabalhar em equipe e ter foco ao cliente, atualmente estou me desenvolvendo na área de Desenvolvimento de Software. Cursando Análise e Desenvolvimento de Sistemas na Fatec e participando do bootcamp da Generation Brasil, onde estou aprendendo tecnologias como Java, Spring, GitHub, MySQL, Html5, React, Node e aprimorando softs skills como a comunicação, trabalho em equipe, proatividade, persistência, orientação aos detalhes e responsabilidade pessoal.</p>
             </div>
-            <img src="assets/images/goku.jpg" alt="Oi, eu sou a Yngrid!">
+            <img class="foto" src="assets/images/foto_eu (2).jpeg" alt="Olá! Eu sou a Yngrid!">
         </section>
+
         <h1 id="video">Vídeo:</h1>
-        <section>
-            <h2>Vídeo do Momento</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/EzN5SW2QOWY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <section id="video">
+            <div class="videoTitulo">
+              <h3>Meu Pitch</h3>
+            </div>
+            <div>
+              <iframe class="video"width="800" height="300" src="https://www.youtube.com/embed/MiHp5Bw4MCE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
         </section>
     </main>
 
     <!-- Rodapé da Página -->
     <footer>
-        <div>
-            <a href="https://linkedin.com" target="_blank">
-                <img src="assets/images/linkedin.png" alt="linkedin">
+        <div class="redes_sociais">
+            <a href="https://www.linkedin.com/in/yngrid-padilha-8ba3601a5/" target="_blank">
+                <img class="icons" src="assets/images/linkedin.png" alt="Linkedin">
             </a>
-            <img src="assets/images/GitHub.png" alt="GitHub">
-            <img src="assets/images/instagram.png" alt="instagram">
+            <a href="https://github.com/yngridp" target="_blank">
+                <img class="icons" src="assets/images/github.png" alt="Github">
+            </a>
+            <a href="https://www.instagram.com/yngrid.padilha/" target="_blank">
+                <img class="icons" src="assets/images/instagram.png" alt="Instagram">
+            </a>
         </div>
-        <p>Desenvolvido por: Yngrid Padilha - 2023 &copy;</p>
-
-
+        <p class="by">Desenvolvido por: Yngrid Padilha - 2023 &copy;</p>
     </footer>
+
 </body>
 </html>

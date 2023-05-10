@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Roboto:wght@100;500&display=swap%27');
+
+:root{
+    --backgroung-body : #b37fd1;
+    --backgroung-nav :  #000000;
+    --backgroung-footer : #000000;
+    --sombra-nav : #f7f3ee;
+}
+
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box; /*zera altura e largura das propriedades do navegador*/
+}
+p{ /* font family e margin rem dentro do p define tamanho relacionado a fonte do navegador define a fonte do paragrafo*/
+    font-family:  'lato', Roboto;
+    margin-bottom: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+a{
+    font-family:  'lato', cursive;
+    letter-spacing: 3px;
+    font-weight: 800;
+    color: var(--backgroung-footer);
+}
+
+h1{
+    font-size: 2rem; /*equivale a 32px*/
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: left;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+a{
+    text-decoration: none; /*tira o sublinhado do link*/
+}
+
+h2,
+h3{
+    text-align: center; /*centralizado h2 e h3*/
+}
+
+
+body{
+    background-color: var(--backgroung-body);
+}
+
+nav{
+    margin: 0 auto; /*margin superior e inferior 0 e o restante automatico*/
+    width: 80vw;
+    background-color: var(--backgroung-nav);
+    display: flex;
+    justify-content: space-between; /*espaço entre os elementos*/
+    font-size: 1.5rem;
+    padding: 2.25rem 1.5rem;  /*espaçamento entre o texto e a caixa*/
+    box-shadow: 2px 2px 5px var(--sombra-nav);
+}
+
+.logo{
+    display: flex; /*movimentar caixa na tela*/
+    width: 20%;
+    justify-content: left;
+    position: relative;
+    align-items: center;
+}
+
+.icone{
+    width: 5rem;
+    display: flex;
+    padding-left: 1rem;
+}
+.titulo{
+    font-family: 'lato', cursive;
+    color:white;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    font-weight: 800;
+}
+
+ul{ /*muda portifolio*/
+    list-style: none; 
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    font-size: 24px; /* 24px -mesma coisa de colocar 1.5rem*/
+    color: white;
+}
+
+nav a{ /* nav a- muda tudo dentro da caixa nav*/
+    color: white;
+
+}
+main{
+    width: 80vw;
+    margin: 0 auto;
+}
+
+#sobre{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #aca8a8;
+    border-radius: 16px; /*borda arredondada*/
+    gap: 20px; /*espaço entre texto e imagem*/
+}
+
+.foto{
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px var(--sombra-nav);
+}
+
+#meu_video {
+    margin-bottom: 2rem;
+}
+
+.video {
+    width: 60vw;
+    aspect-ratio: 16/10;
+    margin: 0 auto;
+    display: block;
+    border-radius: 8px;
+    margin-top: 1rem;
+    padding: 2rem 1rem;;
+}
+
+footer{
+    width: 80vw;
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--backgroung-footer);
+}
+
+.redes_sociais {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.by {
+    display: flex;
+    padding-top: 0.25rem;
+    color: rgb(204, 23, 3);
+}
+
+.icons {
+    width: 50px;
+    padding: 0 0.5rem;
+}
+
+/*Estilizar o Formulário*/
+
+hr{
+    margin: 1rem;
+}
+
+.contato {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    padding: 40px
+}
+
+.endereco {
+    font-family: 'lato', Roboto;
+    color: var(--backgroung-footer);
+    font-size: 1rem;
+}
+
+.formulario {
+    width: 50%;
+}
+
+label{
+    font-family: 'lato', Roboto;
+    color:black;
+    font-size: 1.25rem;
+}
+
+input,
+textarea,
+button{
+    font-family:  'lato', Roboto;
+    width: 100%;
+    margin-top: 0.25rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    color:#000000;
+
+}
+
+button{
+    font-family:  'lato', Roboto;
+    background-color: var(--backgroung-nav);
+    font-weight: 800;
+    color: white;
+}
+
+button:hover{ /*quando o mouse passar em cima muda de cor*/
+background-color: navy;
+}
+
+input::placeholder,
+textarea::placeholder{ /*mudar cor quando mouse mexe dentro da caixa ::*/
+    color: var(--backgroung-nav)
+}
+
+input,
+textarea {
+    border: 1px solid navy;
+}
+
+
+.campos-form {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 1000px) {
+    #sobre {
+        flex-direction: column-reverse;
+    }
+
+}
