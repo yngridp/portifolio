@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Roboto:wght@100;500&display=swap%27');
 
 :root{
-    --backgroung-body : #b37fd1;
+    --backgroung-body : #925faf;
     --backgroung-nav :  #000000;
     --backgroung-footer : #000000;
     --sombra-nav : #f7f3ee;
@@ -83,7 +83,7 @@ nav{
 }
 .titulo{
     font-family: 'lato', cursive;
-    color:white;
+    color:rgb(246, 240, 240);
     font-size: 1.5rem;
     letter-spacing: 3px;
     font-weight: 800;

@@ -67,7 +67,7 @@ function validarMensagem() {
 
 function enviarForm() {
   if (nomeOk === true && emailOk === true && mensagemOk === true) {
-    alert(nome.value + ", obrigado pelo contato, aguarde nosso retorno.");
+    alert(nome.value + ", obrigada pela sua mensagem! :)");
   } else {
     alert("Por favor, preencha todos os campos corretamente.");
   }
