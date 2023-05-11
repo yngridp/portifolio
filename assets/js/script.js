@@ -1,7 +1,4 @@
-﻿
-//Variaveis do escopo global
-
-const nome = document.querySelector("#nome"); /*pegando o input, armazenando na constante nome o que tem dentro da div, query selector -consultar seletor*/ 
+﻿const nome = document.querySelector("#nome");
 const email = document.querySelector("#email");
 const mensagem = document.querySelector("#mensagem");
 
@@ -11,10 +8,7 @@ let mensagemOk = false;
 let cepOk = false;
 
 function validarNome() {
-
-    //variavel do escoo local
-
-  let txtNome = document.querySelector("#txtNome"); //recebendo em txt Nome o que está dentro da div txtNome
+  let txtNome = document.querySelector("#txtNome");
 
   if (nome.value.length < 3) {
     txtNome.innerHTML = "Nome muito curto";
@@ -41,7 +35,7 @@ function validarEmail() {
   }
 }
 
-function validarEmail2() { //expressão regular para validar email
+function validarEmail2() {
   let regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   let txtEmail = document.querySelector("#txtEmail");
 
@@ -59,7 +53,7 @@ function validarEmail2() { //expressão regular para validar email
 function validarMensagem() {
   let txtMensagem = document.querySelector("#txtMensagem");
 
-  if (mensagem.value.length >= 100) {
+  if (mensagem.value.length >= 50) {
     txtMensagem.innerHTML = "Mensagem muito grande!";
     txtMensagem.style.color = "red";
     mensagemOk = false;
@@ -72,7 +66,7 @@ function validarMensagem() {
 
 function enviarForm() {
   if (nomeOk === true && emailOk === true && mensagemOk === true) {
-    alert(nome.value + ", obrigada pela sua mensagem!");
+    alert(nome.value + ", obrigado pelo contato, aguarde nosso retorno.");
   } else {
     alert("Por favor, preencha todos os campos corretamente.");
   }

@@ -114,6 +114,8 @@ main{
     background-color: #aca8a8;
     border-radius: 16px; /*borda arredondada*/
     gap: 20px; /*espaço entre texto e imagem*/
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 .foto{

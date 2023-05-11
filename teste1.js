@@ -47,3 +47,4 @@ const nomes = ["Yngrid", "Stéfani", "Maria", "Julia"]
 nomes.forEach(nome => console.log(nome)) /*percorrendo o vetor e cada posição que achar vai guardar na variavel nome e imprimir na tela*/
 
 
+nomes.forEach(nome => console.log(nome)) /*percorrendo o vetor e cada posição que achar vai guardar na variavel nome e imprimir na tela*/
