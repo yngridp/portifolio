@@ -1,6 +1,7 @@
 ﻿const nome = document.querySelector("#nome");
 const email = document.querySelector("#email");
 const mensagem = document.querySelector("#mensagem");
+const cep = document.querySelector("#cep");
 
 let nomeOk = false;
 let emailOk = false;
